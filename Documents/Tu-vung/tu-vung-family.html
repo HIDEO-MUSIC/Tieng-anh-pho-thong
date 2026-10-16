@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TỪ VỰNG FAMILY - TIẾNG ANH PT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f8ff;
+        }
+
+        h1 {
+            color: #174a8b;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .vocabulary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .word-card {
+            background-color: white;
+            border: 1px solid #cbdaf0;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .word-card h3 {
+            color: #174a8b;
+            margin-bottom: 8px;
+        }
+
+        .pronunciation {
+            color: #666;
+            font-style: italic;
+        }
+
+        .meaning {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .example {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #174a8b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2563c7;
+        }
+
+        @media (max-width: 700px) {
+            .vocabulary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            body {
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>FAMILY – GIA ĐÌNH</h1>
+
+    <p class="intro">
+        Học từ vựng tiếng Anh qua chủ đề gia đình.
+    </p>
+
+    <h2>1. TỪ VỰNG MỚI</h2>
+
+    <div class="vocabulary">
+
+        <div class="word-card">
+            <h3>Father</h3>
+            <p class="pronunciation">/ˈfɑːðə(r)/</p>
+            <p class="meaning">Bố, cha</p>
+            <p class="example">This is my father.</p>
+            <button onclick="docTu('father')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Mother</h3>
+            <p class="pronunciation">/ˈmʌðə(r)/</p>
+            <p class="meaning">Mẹ, má</p>
+            <p class="example">This is my mother.</p>
+            <button onclick="docTu('mother')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Parents</h3>
+            <p class="pronunciation">/ˈpeərənts/</p>
+            <p class="meaning">Bố mẹ</p>
+            <p class="example">I love my parents.</p>
+            <button onclick="docTu('parents')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Brother</h3>
+            <p class="pronunciation">/ˈbrʌðə(r)/</p>
+            <p class="meaning">Anh, em trai</p>
+            <p class="example">I have one brother.</p>
+            <button onclick="docTu('brother')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Sister</h3>
+            <p class="pronunciation">/ˈsɪstə(r)/</p>
+            <p class="meaning">Chị, em gái</p>
+            <p class="example">She is my sister.</p>
+            <button onclick="docTu('sister')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Grandfather</h3>
+            <p class="pronunciation">/ˈɡrænfɑːðə(r)/</p>
+            <p class="meaning">Ông</p>
+            <p class="example">My grandfather is kind.</p>
+            <button onclick="docTu('grandfather')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Grandmother</h3>
+            <p class="pronunciation">/ˈɡrænmʌðə(r)/</p>
+            <p class="meaning">Bà</p>
+            <p class="example">My grandmother is kind.</p>
+            <button onclick="docTu('grandmother')">🔊 Nghe từ</button>
+        </div>
+
+        <div class="word-card">
+            <h3>Children</h3>
+            <p class="pronunciation">/ˈtʃɪldrən/</p>
+            <p class="meaning">Các con, trẻ em</p>
+            <p class="example">They have two children.</p>
+            <button onclick="docTu('children')">🔊 Nghe từ</button>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>2. CÂU MẪU</h2>
+
+        <p><b>Who is this?</b> – Đây là ai?</p>
+        <p><b>This is my father.</b> – Đây là bố tôi.</p>
+
+        <p><b>How many people are there in your family?</b></p>
+        <p>Gia đình bạn có bao nhiêu người?</p>
+
+        <p><b>There are four people in my family.</b></p>
+        <p>Gia đình tôi có bốn người.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. BÀI TẬP</h2>
+
+        <p><b>Question 1:</b> “Mother” có nghĩa là gì?</p>
+
+        <label>
+            <input type="radio" name="q1" value="a">
+            Bố
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="q1" value="b">
+            Mẹ
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="q1" value="c">
+            Anh trai
+        </label>
+
+        <p><b>Question 2:</b> “Brother” có nghĩa là gì?</p>
+
+        <label>
+            <input type="radio" name="q2" value="a">
+            Chị, em gái
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="q2" value="b">
+            Ông
+        </label>
+        <br>
+
+        <label>
+            <input type="radio" name="q2" value="c">
+            Anh, em trai
+        </label>
+
+        <br><br>
+
+        <button onclick="kiemTra()">Kiểm tra đáp án</button>
+
+        <p id="ketQua"></p>
+    </div>
+
+    <br>
+
+    <a href="tu-vung.html">← Quay lại mục Từ vựng</a>
+    <br><br>
+    <a href="Index.html">← Quay lại trang chủ</a>
+
+    <script>
+        function docTu(tu) {
+            const tiengAnh = new SpeechSynthesisUtterance(tu);
+            tiengAnh.lang = "en-US";
+            tiengAnh.rate = 0.8;
+
+            speechSynthesis.cancel();
+            speechSynthesis.speak(tiengAnh);
+        }
+
+        function kiemTra() {
+            let diem = 0;
+
+            const cau1 = document.querySelector(
+                'input[name="q1"]:checked'
+            );
+
+            const cau2 = document.querySelector(
+                'input[name="q2"]:checked'
+            );
+
+            if (cau1 && cau1.value === "b") {
+                diem++;
+            }
+
+            if (cau2 && cau2.value === "c") {
+                diem++;
+            }
+
+            document.getElementById("ketQua").textContent =
+                "Bạn trả lời đúng " + diem + "/2 câu.";
+        }
+    </script>
+
+</body>
+</html>

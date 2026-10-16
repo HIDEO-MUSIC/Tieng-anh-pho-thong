@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THÌ QUÁ KHỨ ĐƠN</title>
+</head>
+
+<body>
+
+<h1 style="color: blue;">THÌ QUÁ KHỨ ĐƠN</h1>
+
+<p>Chào mừng các em đến với phần luyện ngữ pháp.</p>
+
+<div style="display: flex; gap: 30px;">
+
+    <div style="text-align: center;"> 
+        <a href="Documents/Ngu-phap/qua-khu-don.pdf">    
+            <img src="Images/phat-am/document.png" width="50" height="50">
+        </a>
+        <div>Tài liệu</div>
+    </div>
+
+
+    <div style="text-align: center;">
+        <a href="Audio/Phat-am/Walk, Work, Word, World.mp3">
+            <img src="Images/phat-am/audio.png" width="50" height="50">
+        </a>
+        <div>Audio</div>
+    </div>
+
+
+    <<div style="text-align: center;">
+
+    <!-- Biểu tượng Video -->
+    <img src="Images/phat-am/video.png"
+         width="90"
+         height="50"
+         style="cursor: pointer;"
+         onclick="moYouTube()">
+
+    <div>Video</div>
+
+</div>
+
+
+<!-- KHU VỰC HIỂN THỊ YOUTUBE -->
+
+<div id="khungYouTube" style="display: none; margin-top: 20px;">
+
+    <button onclick="dongYouTube()">
+        ← QUAY LẠI
+    </button>
+
+    <br><br>
+
+    <iframe id="videoYouTube"
+            width="560"
+            height="315"
+            src=""
+            title="Video bài học"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+
+</div>
+
+
+<script>
+    function moYouTube() {
+        document.getElementById("khungYouTube").style.display = "block";
+
+        document.getElementById("videoYouTube").src =
+            "Videos/Ngu-phap/thi-tieng-anh/qua-khu-don.mp4";
+    }
+
+    function dongYouTube() {
+        document.getElementById("videoYouTube").src = "";
+        document.getElementById("khungYouTube").style.display = "none";
+    }
+</script>
+
+</div>
+
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px;">
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <h2>1. Cấu trúc</h2>
+
+        <p><b>Khẳng định</b></p>
+
+        <p>S + V-ed/V2</p>
+
+        <p><b>Phủ định</b></p>
+
+        <p>S + did not + V</p>
+
+        <p><b>Nghi vấn</b></p>
+
+        <p>Did + S + V?</p>
+
+    </div>
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <h2>2. Cách dùng</h2>
+
+        <p>1. Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ.</p>
+
+        <p>2. Diễn tả một chuỗi hành động xảy ra liên tiếp trong quá khứ.</p>
+
+        <p>3. Diễn tả thói quen hoặc hành động lặp lại trong quá khứ.</p>
+
+    </div>
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <h2>3. Dấu hiệu nhận biết</h2>
+
+        <p>yesterday – hôm qua</p>
+
+        <p>last night – tối qua</p>
+
+        <p>last week – tuần trước</p>
+
+        <p>last month – tháng trước</p>
+
+        <p>last year – năm ngoái</p>
+
+        <p>... ago – cách đây...</p>
+
+        <p>in 2020 – vào năm 2020</p>
+
+        <p>when I was young – khi tôi còn trẻ</p>
+
+    </div>
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <h2>4. Ví dụ</h2>
+
+        <p>I went to school yesterday.</p>
+
+        <p>She watched TV last night.</p>
+
+        <p>They played football last Sunday.</p>
+
+        <p>He visited Hanoi two years ago.</p>
+
+    </div>
+
+</div>
+
+
+<h2>5. Bài tập</h2>
+
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <p><b>Bài 1. Chia động từ trong ngoặc:</b></p>
+
+        <p>1. I __________ (go) to school yesterday.</p>
+
+        <p>2. She __________ (watch) TV last night.</p>
+
+        <p>3. They __________ (play) football last Sunday.</p>
+
+        <p>4. We __________ (visit) Hanoi last year.</p>
+
+        <p>5. He __________ (buy) a new book yesterday.</p>
+
+    </div>
+
+
+    <div style="border: 1px solid black; padding: 10px;">
+
+        <p><b>Bài 2. Chọn đáp án đúng:</b></p>
+
+        <p><b>1. I ________ to school yesterday.</b></p>
+
+        <p>A. go</p>
+        <p>B. went</p>
+        <p>C. goes</p>
+
+
+        <p><b>2. She ________ TV last night.</b></p>
+
+        <p>A. watches</p>
+        <p>B. watched</p>
+        <p>C. watch</p>
+
+
+        <p><b>3. They ________ football last Sunday.</b></p>
+
+        <p>A. played</p>
+        <p>B. play</p>
+        <p>C. plays</p>
+
+
+        <p><b>4. He ________ Hanoi two years ago.</b></p>
+
+        <p>A. visits</p>
+        <p>B. visited</p>
+        <p>C. visit</p>
+
+    </div>
+
+</div>
+
+
+<h2>6. Viết câu theo gợi ý</h2>
+
+<div style="border: 1px solid black; padding: 10px;">
+
+    <p>1. I / go / to school / yesterday.</p>
+
+    <p>→ ______________________________</p>
+
+
+    <p>2. She / watch / TV / last night.</p>
+
+    <p>→ ______________________________</p>
+
+
+    <p>3. They / play / football / last Sunday.</p>
+
+    <p>→ ______________________________</p>
+
+
+    <p>4. He / visit / Hanoi / two years ago.</p>
+
+    <p>→ ______________________________</p>
+
+
+    <p>5. We / study / English / last year.</p>
+
+    <p>→ ______________________________</p>
+
+</div>
+
+
+<br>
+
+<a href="cac-thi.html">← QUAY LẠI CÁC THÌ</a>
+
+</body>
+
+</html>

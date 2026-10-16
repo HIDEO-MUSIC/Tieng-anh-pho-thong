@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGỮ PHÁP TIẾNG ANH | TIẾNG ANH PT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            color: #243247;
+            background: #f3f6fb;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #103b73, #1768ac);
+            color: white;
+            padding: 48px 20px 42px;
+            text-align: center;
+        }
+
+        .hero .eyebrow {
+            margin: 0 0 8px;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #d6e9ff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        .hero .welcome {
+            max-width: 760px;
+            margin: 14px auto 0;
+            font-size: 21px;
+            color: #eef6ff;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: 34px auto 50px;
+            padding: 0 20px;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .section-heading .line {
+            width: 5px;
+            height: 38px;
+            border-radius: 4px;
+            background: #2474c6;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            margin: 0;
+            color: #123f78;
+            font-size: 29px;
+        }
+
+        .section-subtitle {
+            margin: 4px 0 24px;
+            color: #65748a;
+            font-size: 17px;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .topic-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-height: 108px;
+            padding: 20px;
+            border: 1px solid #dce5f0;
+            border-radius: 14px;
+            background: white;
+            text-decoration: none;
+            color: #243247;
+            box-shadow: 0 4px 12px rgba(23, 58, 99, 0.05);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+
+        .topic-link:hover {
+            transform: translateY(-3px);
+            border-color: #8db9e8;
+            box-shadow: 0 9px 20px rgba(23, 58, 99, 0.12);
+        }
+
+        .topic-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border-radius: 12px;
+            background: #e8f2ff;
+            color: #1557a0;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .topic-text {
+            flex: 1;
+        }
+
+        .topic-title {
+            display: block;
+            font-size: 21px;
+            font-weight: bold;
+            color: #174a83;
+            line-height: 1.35;
+        }
+
+        .topic-description {
+            display: block;
+            margin-top: 5px;
+            color: #6b7789;
+            font-size: 16px;
+        }
+
+        .arrow {
+            color: #4385c7;
+            font-size: 26px;
+            padding-left: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 22px 15px;
+            color: #68778b;
+            background: #e8eef6;
+            font-size: 16px;
+        }
+
+        @media (max-width: 700px) {
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 36px 16px;
+            }
+
+            h1 {
+                font-size: 31px;
+            }
+
+            .hero .welcome {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .topic-link {
+                padding: 16px;
+                min-height: 92px;
+            }
+
+            .topic-title {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <p class="eyebrow">TIẾNG ANH PT · HỌC TẬP CÓ HỆ THỐNG</p>
+        <h1>NGỮ PHÁP TIẾNG ANH</h1>
+        <p class="welcome">Chào mừng các em đến với phần Cấu trúc Ngữ pháp. Cùng học từng chuyên đề, nắm vững kiến thức và vận dụng tiếng Anh tự tin hơn.</p>
+    </header>
+
+    <main>
+        <div class="section-heading">
+            <span class="line"></span>
+            <h2>CÁC CHUYÊN ĐỀ NGỮ PHÁP</h2>
+        </div>
+        <p class="section-subtitle">Chọn một chuyên đề để bắt đầu học tập.</p>
+
+        <div class="topic-grid">
+
+            <a class="topic-link" href="cac-thi.html">
+                <span class="topic-number">01</span>
+                <span class="topic-text">
+                    <span class="topic-title">Các thì trong tiếng Anh</span>
+                    <span class="topic-description">Hệ thống các thì và cách sử dụng</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="cau-bi-dong.html">
+                <span class="topic-number">02</span>
+                <span class="topic-text">
+                    <span class="topic-title">Câu bị động</span>
+                    <span class="topic-description">Cấu trúc và cách chuyển câu</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="cau-dieu-kien.html">
+                <span class="topic-number">03</span>
+                <span class="topic-text">
+                    <span class="topic-title">Câu điều kiện</span>
+                    <span class="topic-description">Điều kiện có thật và giả định</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="cau-tuong-thuat.html">
+                <span class="topic-number">04</span>
+                <span class="topic-text">
+                    <span class="topic-title">Câu tường thuật</span>
+                    <span class="topic-description">Thuật lại lời nói và câu hỏi</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="menh-de-quan-he.html">
+                <span class="topic-number">05</span>
+                <span class="topic-text">
+                    <span class="topic-title">Mệnh đề quan hệ</span>
+                    <span class="topic-description">Who, whom, which, that, whose...</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="cau-so-sanh.html">
+                <span class="topic-number">06</span>
+                <span class="topic-text">
+                    <span class="topic-title">Câu so sánh</span>
+                    <span class="topic-description">So sánh bằng, hơn và nhất</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="dong-tu-khuyet-thieu.html">
+                <span class="topic-number">07</span>
+                <span class="topic-text">
+                    <span class="topic-title">Động từ khuyết thiếu</span>
+                    <span class="topic-description">Can, could, must, should, may...</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+            <a class="topic-link" href="danh-dong-tu.html">
+                <span class="topic-number">08</span>
+                <span class="topic-text">
+                    <span class="topic-title">Danh động từ và động từ nguyên mẫu</span>
+                    <span class="topic-description">V-ing, to + V và động từ nguyên mẫu</span>
+                </span>
+                <span class="arrow">›</span>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        TIẾNG ANH PT · Học chắc ngữ pháp, sử dụng tiếng Anh tự tin.
+    </footer>
+
+</body>
+</html>

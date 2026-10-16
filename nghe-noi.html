@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NGHE - NÓI</title>
+</head>
+
+<body>
+
+<h1 style="color: blue;">🗣️ NGHE – NÓI</h1>
+
+<p>
+    Luyện nghe và nói tiếng Anh qua các bài hội thoại,
+    câu mẫu và tình huống giao tiếp thực tế.
+</p>
+
+
+<h2>1. BÀI NGHE</h2>
+
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+
+    <!-- BÊN TRÁI: BA BIỂU TƯỢNG -->
+
+    <div style="display: flex; gap: 25px;">
+
+        <!-- Nghe bài hát -->
+        <div style="text-align: center;">
+
+            <img src="Images/phat-am/audio.png"
+                 width="60"
+                 style="cursor: pointer;"
+                 onclick="moVideo('baiHat')">
+
+            <br>
+
+            <b>Nghe bài hát</b>
+
+        </div>
+
+
+        <!-- Nghe kể chuyện -->
+        <div style="text-align: center;">
+
+            <img src="Images/phat-am/audio.png"
+                 width="60"
+                 style="cursor: pointer;"
+                 onclick="moVideo('keChuyen')">
+
+            <br>
+
+            <b>Nghe kể chuyện</b>
+
+        </div>
+
+
+        <!-- Nghe VOA -->
+        <div style="text-align: center;">
+
+            <img src="Images/phat-am/audio.png"
+                 width="60"
+                 style="cursor: pointer;"
+                 onclick="moVideo('voa')">
+
+            <br>
+
+            <b>Nghe VOA</b>
+
+        </div>
+
+    </div>
+
+
+    <!-- BÊN PHẢI: VÙNG HIỂN THỊ VIDEO -->
+
+    <div>
+
+        <video id="baiHat"
+               width="320"
+               controls
+               style="display: none;">
+
+            <source src="Videos/Nghe-noi/nothing-gonna.mp4"
+                    type="video/mp4">
+
+        </video>
+
+
+        <video id="keChuyen"
+               width="320"
+               controls
+               style="display: none;">
+
+            <source src="Videos/Nghe-noi/luyen-nghe-nhanh.mp4"
+                    type="video/mp4">
+
+        </video>
+
+
+        <video id="voa"
+               width="320"
+               controls
+               style="display: none;">
+
+            <source src="Videos/Nghe-noi/voa-english.mp4"
+                    type="video/mp4">
+
+        </video>
+
+    </div>
+
+</div>
+
+
+<!-- CHƯƠNG TRÌNH ĐIỀU KHIỂN VIDEO -->
+
+<script>
+    function moVideo(idVideo) {
+
+        const danhSach = ["baiHat", "keChuyen", "voa"];
+
+        danhSach.forEach(function(id) {
+            const video = document.getElementById(id);
+            video.pause();
+            video.currentTime = 0;
+            video.style.display = "none";
+        });
+
+        const videoDuocChon = document.getElementById(idVideo);
+
+        videoDuocChon.style.display = "block";
+
+        if (idVideo === "baiHat") {
+            videoDuocChon.currentTime = 10;
+        }
+
+        videoDuocChon.play();
+    }
+
+    document.getElementById("baiHat").addEventListener("timeupdate", function() {
+    if (this.currentTime >= 55) {
+        this.currentTime = 10;
+        this.play();
+    }
+});
+</script>
+
+<h2>2. LUYỆN NÓI</h2>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+
+    <div style="border: 1px solid gray; padding: 20px; text-align: center;">
+        🗣️
+        <br><br>
+        <b>Chào hỏi</b>
+        <br>
+        Hello! How are you?
+    </div>
+
+    <div style="border: 1px solid gray; padding: 20px; text-align: center;">
+        🗣️
+        <br><br>
+        <b>Giới thiệu bản thân</b>
+        <br>
+        My name is Hoa.
+    </div>
+
+    <div style="border: 1px solid gray; padding: 20px; text-align: center;">
+        🗣️
+        <br><br>
+        <b>Hỏi đường</b>
+        <br>
+        Where is the station?
+    </div>
+
+</div>
+
+
+<h2>3. HỘI THOẠI</h2>
+
+<div style="border: 1px solid gray; padding: 20px;">
+
+    <p>
+        <b>A:</b> Hello! How are you?
+    </p>
+
+    <p>
+        <b>B:</b> I'm fine, thank you. And you?
+    </p>
+
+    <p>
+        <b>A:</b> I'm very well. Thank you.
+    </p>
+
+</div>
+
+
+<h2>4. BÀI TẬP</h2>
+
+<div style="border: 1px solid gray; padding: 20px;">
+
+    <p><b>Nghe và chọn câu đúng:</b></p>
+
+    <p>1. How are you?</p>
+
+    <p>
+        ☐ I'm fine.
+        &nbsp;&nbsp;
+        ☐ I'm ten years old.
+    </p>
+
+    <p>2. What is your name?</p>
+
+    <p>
+        ☐ My name is Lan.
+        &nbsp;&nbsp;
+        ☐ I'm fine.
+    </p>
+
+</div>
+
+
+<br><br>
+
+<a href="Index.html">← QUAY LẠI TRANG CHỦ</a>
+
+</body>
+
+</html>

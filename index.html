@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIẾNG ANH PT | Giáo viên tiếng Anh</title>
+
+    <style>
+        /* 1. Thiết lập chung cho toàn bộ trang */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f7fc;
+            color: #26364a;
+            line-height: 1.6;
+        }
+
+        /* 2. Phần đầu trang */
+        header {
+            background: linear-gradient(135deg, #0756a5, #32a4e8);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        /* 3. Nội dung chính */
+        main {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        /* 4. Khung giới thiệu giáo viên */
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .teacher-photo {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #d8edff;
+        }
+
+        .intro h2 {
+            color: #0756a5;
+            margin-top: 0;
+        }
+
+        /* 5. Các nút kết nối */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .youtube {
+            background-color: #e62117;
+        }
+
+        .facebook {
+            background-color: #1877f2;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* 6. Tiêu đề chương trình học */
+        .section-title {
+            text-align: center;
+            color: #0756a5;
+            margin: 35px 0 20px;
+        }
+
+        /* 7. Lưới gồm 6 ô môn học */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .course-card {
+            background: white;
+            text-align: center;
+            padding: 22px 12px;
+            border-radius: 14px;
+            border: 1px solid #dce8f3;
+            text-decoration: none;
+            color: #26364a;
+            box-shadow: 0 3px 10px #00000008;
+            transition: 0.2s;
+        }
+
+        .course-card img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .course-card h3 {
+            color: #0756a5;
+            margin: 10px 0 4px;
+        }
+
+        .course-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #60758a;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            border-color: #32a4e8;
+            box-shadow: 0 8px 20px #0756a520;
+        }
+
+        /* 8. Chân trang */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #073b70;
+            color: white;
+        }
+
+        /* 9. Điều chỉnh khi xem trên điện thoại */
+        @media (max-width: 650px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .course-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PHẦN 1: ĐẦU TRANG -->
+    <header>
+        <h1>🎓 TIẾNG ANH PHỔ THÔNG</h1>
+        <p>Học đúng phương pháp – Vững kiến thức – Tự tin tiến bộ</p>
+    </header>
+
+    <main>
+
+        <!-- PHẦN 2: GIỚI THIỆU GIÁO VIÊN -->
+        <section class="intro">
+
+            <img
+                class="teacher-photo"
+                src="Images/sky.png"
+                alt="Ảnh giáo viên"
+            >
+
+            <div>
+                <h2>Xin chào các em! 👋</h2>
+
+                <p>
+                    Tôi là <strong>Giáo viên có kinh nghiệm 20 năm giảng dạy tiếng Anh bậc phổ thông </strong>.
+                    Tôi sẽ đồng hành cùng các em trong chương trình <strong>TIẾNG ANH PHỔ THÔNG</strong>.
+                </p>
+                
+                <p>
+                    💡 Kết hợp kiến thức nền tảng với công nghệ,
+                    giúp các em học tập chủ động và hiệu quả.
+                </p>
+
+                <div class="social-links">
+
+                    <a class="youtube"
+                       href="https://www.youtube.com/watch?v=a78b4SFX90s"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        ▶ YouTube
+                    </a>
+
+                    <a class="facebook"
+                       href="https://www.facebook.com/vnptchi74/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        f Facebook
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PHẦN 3: CHƯƠNG TRÌNH HỌC -->
+        <h2 class="section-title">
+            📖 NỘI DUNG CHƯƠNG TRÌNH HỌC
+        </h2>
+
+        <div class="course-grid">
+
+            <a class="course-card" href="phat-am.html">
+                <img src="Images/main/icon-phat-am tr1.png"
+                     alt="Biểu tượng phát âm">
+                <h3>🎧 Phát âm</h3>
+                <p>Luyện âm và ngữ điệu</p>
+            </a>
+
+            <a class="course-card" href="tu-vung.html">
+                <img src="Images/main/icon-tu-vung tr1.png"
+                     alt="Biểu tượng từ vựng">
+                <h3>📚 Từ vựng</h3>
+                <p>Mở rộng vốn từ</p>
+            </a>
+
+            <a class="course-card" href="ngu-phap.html">
+                <img src="Images/main/icon-ngu-phap tr1.png"
+                     alt="Biểu tượng ngữ pháp">
+                <h3>📖 Ngữ pháp</h3>
+                <p>Nắm vững cấu trúc câu</p>
+            </a>
+
+            <a class="course-card" href="nghe-noi.html">
+                <img src="Images/main/icon-nghe-noi tr1.png"
+                     alt="Biểu tượng nghe nói">
+                <h3>🗣️ Nghe – Nói</h3>
+                <p>Rèn kỹ năng giao tiếp</p>
+            </a>
+
+            <a class="course-card" href="doc-viet.html">
+                <img src="Images/main/icon-doc-viet tr1.png"
+                     alt="Biểu tượng đọc viết">
+                <h3>✍️ Đọc – Viết</h3>
+                <p>Đọc hiểu và viết câu</p>
+            </a>
+
+            <a class="course-card" href="bai-tap.html">
+                <img src="Images/main/icon-bai-tap tr1.png"
+                     alt="Biểu tượng bài tập">
+                <h3>📝 Bài tập</h3>
+                <p>Luyện tập và củng cố</p>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- PHẦN 4: CHÂN TRANG -->
+    <footer>
+        <p>TIẾNG ANH PT © 2026</p>
+        <p>Đồng hành cùng các em trên hành trình học tiếng Anh.</p>
+    </footer>
+
+</body>
+</html>
